@@ -1,0 +1,50 @@
+"""
+Created on Mon Oct  8 19:21:54 2018
+@author: sumit
+Implement a group_by_owners function that:
+
+    Accepts a dictionary containing the file owner name for each file name.
+    Returns a dictionary containing a list of file names for each owner name, in any order.
+
+For example, for dictionary {'Input.txt': 'Sandy', 'Code.py': 'Stan', 'Output.txt': 'Sandy'} the group_by_owners function should return {'Randy': ['Input.txt', 'Output.txt'], 'Stan': ['Code.py']}.
+
+"""
+
+class FileOwners:
+
+    files = {
+    'Input.txt': 'Sandy',
+    'Code.py': 'Stan',
+    'Output.txt': 'Sandy'
+    }
+
+    @staticmethod
+    def group_by_owners(files):
+     
+        temp=[]
+    
+        for i in files:
+            print(i)
+            print ('%$%$', (files[i]))
+                
+            if files[i] not in temp:
+                temp.append (files[i])
+        
+        result={}
+    
+        for j in temp:
+            temp1=[]
+        
+            for i in files:
+                print(files[i])
+        
+                print('-------') // void
+            
+                if files[i]==j: 
+                    temp1.append(i)
+                    print (temp1)
+                    result[j]=temp1
+        return (result)
+
+
+print(FileOwners.group_by_owners(files))
