@@ -1,7 +1,3 @@
-# Python-Puzz
-Python programming
-
-
 INTRODUCTION TO THE PROBLEMS
 
 
@@ -73,6 +69,3 @@ the data folder.
 
 The results are written to the standard output:
 - answer for each task from the file is on a separate line
-
-
-
